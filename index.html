@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>rock/paper/scissors</title>
+</head>
+<body>
+    <div class="game-container">
+
+        <div class="pc-area" id="pc-options">
+
+            <div class="value-area" id="rock">
+                <i class="value-img fa-solid fa-gem"></i>
+                <p class="value-title">rock</p>
+            </div>
+            <div class="value-area"  id="paper">
+                <i class="value-img fa-solid fa-scroll"></i>
+                <p class="value-title"> paper</p>
+            </div>
+            <div class="value-area" id="scissors">
+                <i class="value-img fa-solid fa-scissors"></i>
+                <p class="value-title">scissors</p>
+            </div>
+
+        </div>
+
+        <h1 id="textArea">PICK A CARD</h1>
+
+        <div class="user-area" id="users-options">
+            
+            <button onclick="runGame(0)" class="value-area">
+                <i class="value-img fa-solid fa-gem"></i>
+                <p class="value-title">rock</p>
+            </button>
+            <button onclick="runGame(1)" class="value-area">
+                <i class="value-img fa-solid fa-scroll"></i>
+                <p class="value-title"> paper</p>
+            </button>
+            <button onclick="runGame(2)" class="value-area">
+                <i class="value-img fa-solid fa-scissors"></i>
+                <p class="value-title">scissors</p>
+            </button>
+          
+        </div>
+    </div>
+    <script src="./index.js"></script>
+
+</body>
+</html>

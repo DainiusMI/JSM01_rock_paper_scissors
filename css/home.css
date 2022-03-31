@@ -1,0 +1,76 @@
+@import url(./all.css);
+
+:root {
+    --user-color:#279E00;
+    --user-color-light:#5BEB2D;
+    --pc-color:#9E0F89;
+    --pc-color-light:#FF4AE4;
+    --bg-color:rgb(130, 103, 103);
+
+}
+
+body * {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+    width: 60%;
+    padding: 3rem;
+}
+.pc-area,
+.user-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    justify-items: center;
+    width: 100%;
+}
+.value-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10rem;
+    width: 8rem;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+.value-img {
+    font-size: 3rem;
+}
+.pc-area .value-area {
+    background-color: var(--pc-color);
+    opacity: .8;
+}
+
+.user-area .value-area {
+    cursor: pointer;
+    background-color: var(--user-color);
+    opacity: .8;
+}
+.user-area .value-area:hover,
+.user-area .value-area:focus {
+    opacity: 1;
+    background-color: var(--user-color-light);
+}
+.pc-area .pc-choice-display {
+    opacity: 1;
+    background-color: var(--pc-color-light)
+}
