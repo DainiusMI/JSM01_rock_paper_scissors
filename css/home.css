@@ -16,12 +16,13 @@ body * {
 }
 body {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    height: 90vh;
+    width: 95vw;
     background-color: var(--bg-color);
 }
+
 .game-container {
     display: flex;
     flex-direction: column;
@@ -30,8 +31,26 @@ body {
     gap: 2rem;
     border: 3px solid black;
     border-radius: 1rem;
-    width: 60%;
+    height: 60%;
+    width: 50%;
     padding: 3rem;
+}
+.pc-score-area,
+.user-score-area {
+
+    display: flex;
+    font-size: 18px;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    position: absolute;
+    z-index: 10;
+}
+.pc-score-area {
+    top: 0;
+}
+.user-score-area {
+    bottom: 0;
 }
 .pc-area,
 .user-area {
