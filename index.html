@@ -9,7 +9,16 @@
 </head>
 <body>
 
-    <div class="game-container">
+    <from class="player-info-form" id="info-container">
+        <h2>This is a game of</h2>
+        <h1>ROCK PAPER SCISSORS</h1>
+        <p>it will be played until best of 5</p>
+        <p>ENTER YOUR NAME</p>
+        <input id="user-name-input" onblur="getUserName()" class="username-field" type="text" placeholder="PLAYER" required>
+        <button onclick="validateName()" class="info-button" type="submit">Begin</button>
+    </from>
+
+    <div class="game-container" id="game-container">
 
         <div class="pc-score-area">
             <p class="name-style">OPONENT</p>&nbsp
@@ -53,7 +62,7 @@
         </div>
 
         <div class="user-score-area">
-            <p class="name-style">PLAYER</p>&nbsp
+            <p class="name-style" id="user-name">PLAYER</p>&nbsp
             <p class="score" id="user-score">0</p>
         </div>
     </div>
